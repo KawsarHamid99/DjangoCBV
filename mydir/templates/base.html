@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(72, 75, 72);">
+    <h1>show data </h1>
+    <br>
+    <a href="{% url 'cbv:postpreloaded' pk=posts.id %}">Post Pre Loades</a>
+    <hr>
+    <ul>
+        <li>NAME: {{posts.name}}</li>
+        <li>ID: {{posts.id}}</li>
+        <li>ROLL {{posts.roll}}</li>
+        <li>Subject: {{posts.subject}}</li>
+
+    </ul>
+    <h3>{{data}}</h3>
+    <h3>{{new}}</h3>
+</body>
+</html>
